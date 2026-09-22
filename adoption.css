@@ -1,0 +1,204 @@
+.adoption-container {
+    width: 90%;
+    max-width: 780px;
+    margin: 50px auto;
+    padding: 45px 50px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    animation: formAppear 0.7s ease;
+}
+.adoption-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 700;
+}
+.adoption-container > p {
+    text-align: center;
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+.adoption-container label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+.adoption-container input,
+.adoption-container select,
+.adoption-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fafafa;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.adoption-container input:focus,
+.adoption-container select:focus,
+.adoption-container textarea:focus {
+    border-color: #8b5e3c;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(139, 94, 60, 0.10);
+    transform: translateY(-1px);
+}
+
+
+.adoption-container textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+.adoption-container select {
+    cursor: pointer;
+}
+.adoption-container button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #8b5e3c, #b77b4b);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(139, 94, 60, 0.20);
+}
+.adoption-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(139, 94, 60, 0.30);
+}
+.adoption-container button:active {
+    transform: translateY(0);
+}
+#errorMessage {
+    margin-top: 18px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #b42318;
+    background: #fff1f0;
+    font-size: 14px;
+    text-align: center;
+}
+#confirmation {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    text-align: center;
+    animation: confirmationAppear 0.5s ease;
+}
+
+#confirmation h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#confirmation p {
+    margin: 6px 0;
+}
+.adoption-container > a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    color: #8b5e3c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.adoption-container > a:hover {
+    color: #5f3d27;
+    text-decoration: underline;
+}
+@keyframes formAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes confirmationAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width: 768px) {
+
+    .adoption-container {
+        width: 88%;
+        padding: 35px 25px;
+        margin: 35px auto;
+    }
+
+    .adoption-container h1 {
+        font-size: 27px;
+    }
+
+    .adoption-container input,
+    .adoption-container select,
+    .adoption-container textarea {
+        padding: 13px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .adoption-container {
+        width: 85%;
+        padding: 28px 18px;
+        border-radius: 20px;
+    }
+
+    .adoption-container h1 {
+        font-size: 23px;
+    }
+
+    .adoption-container > p {
+        font-size: 13px;
+    }
+
+    .adoption-container label {
+        font-size: 14px;
+    }
+
+    .adoption-container input,
+    .adoption-container select,
+    .adoption-container textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .adoption-container button {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
