@@ -1,18 +1,18 @@
- let contactForm = document.getElementById("contactForm");
- contactForm.addEventListener("submit", function (event) {
+ let ContactForm = document.getElementById("ContactForm");
+ ContactForm.addEventListener("submit", function (event) {
     event.preventDefault();
  
-    let name = document.getElementById("Name").value();
-    let email = document.getElementById("Email").value();
-    let message = document.getElementById("Message").value();
+    let Name = document.getElementById("Name").value();
+    let Email = document.getElementById("Email").value();
+    let Message = document.getElementById("Message").value();
  
     let errorMessage = document.getElementById("errorMessage");
     let confirmation = document.getElementById("confirmation");
  
-    if (name === "" || email === "" || message === "") {
+    if (Name === "" || Email === "" || Message === "") {
         errorMessage.innerHTML = "Please fill all fields.";
         confirmation.style.display = "none";
-    } else if (!email.includes("@")) {
+    } else if (!Email.includes("@")) {
         errorMessage.innerHTML = "Please enter a valid email.";
         confirmation.style.display = "none";
     } else {
