@@ -1,8 +1,7 @@
 let urlParams = new URLSearchParams(window.location.search);
 let selectedPet = urlParams.get("pet");
-if (selectedPet) {
-   document.getElementById("pet").value = selectedPet;
-
+   if (selectedPet) {
+   document.getElementById("Pet").value = selectedPet; 
 }
 let adoptionForm=document.getElementById("adoptionForm");
 adoptionForm .addEventListener("submit", function(event) {
@@ -14,8 +13,8 @@ adoptionForm .addEventListener("submit", function(event) {
     let pet =document.getElementById("Pet").value;
     let reason =document.getElementById("Reason").value;
 
-    let errorMessage =document.getElementById("ErrorMessage");
-    let confirmation =document.getElementById("Confirmation");
+    let errorMessage = document.getElementById("errorMessage");   
+    let confirmation = document.getElementById("confirmation");   
 
      if (
         name === "" || 
@@ -30,7 +29,7 @@ adoptionForm .addEventListener("submit", function(event) {
     }else if (!email.includes("@")) {
         errorMessage.innerHTML = "Please enter a valid email.";
         confirmation.innerHTML = "";
-    }else if (phone.length !== 11) {
+    }else if (phone.length !== 13 ) {
       errorMessage.innerHTML = "Please enter a valid phone number.";
       confirmation.innerHTML = "";
     }else {
