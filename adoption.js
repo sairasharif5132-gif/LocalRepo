@@ -29,7 +29,7 @@ adoptionForm .addEventListener("submit", function(event) {
     }else if (!email.includes("@")) {
         errorMessage.innerHTML = "Please enter a valid email.";
         confirmation.innerHTML = "";
-    }else if (phone.length !== 13 ) {
+    }else if (phone.length !== 11 ) {
       errorMessage.innerHTML = "Please enter a valid phone number.";
       confirmation.innerHTML = "";
     }else {
