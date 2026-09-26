@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Adoption</title>
+    <link rel="stylesheet" href="contact.css">
+ </head>
+ <body>
+    <header>
+    <h2>Pet Adoption Website</h2>
+    <a href="dashboard.html">Back to Dashboard</a>
+</header>
+     <div>
+        <h1>Contact Us</h1>
+        <p>Have a question about the adoption?Reach out to us anytime.</p>
+     </div>
+     <div class="contact-wrapper"></div>
+       <form id="ContactForm">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required>
+ 
+            <label for="Email">Email:</label>
+            <input type="Email" id="Email" name="Email" required>
+ 
+            <label for="Message">Message:</label>
+            <textarea id="Message" name="Message" required></textarea>
+ 
+            <p id="errorMessage"></p>
+ 
+            <button type="Submit">Send Message</button>
+        </form>
+           <div id="confirmation"></div>
+         <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p> Email: info@petadoption.com</p>
+            <p> Phone: 03001234567</p>
+            <p> Location: Lahore, Punjab, Pakistan</p>
+         </div>
+     </div>
+ </div>
+     <script src="contact.js"></script>
+</body>
+</html>
